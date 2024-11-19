@@ -259,7 +259,7 @@
             },
             methods: {
                 fetchData() {
-                    axios.get('http://gustavoakira.tech:5001/api/dashboard')
+                    axios.get('https://gustavoakira.tech:5001/api/dashboard')
                         .then(response => {
                             this.totalConsumption = response.data.totalConsumption;
                             this.equipmentEfficiency = response.data.equipmentEfficiency;
@@ -270,7 +270,7 @@
                         })
                         .catch(error => console.error("Erro ao buscar dados do dashboard:", error));
 
-                    axios.get('http://gustavoakira.tech:5001/api/sensors')
+                    axios.get('https://gustavoakira.tech:5001/api/sensors')
                         .then(response => {
                             this.sensors = response.data;
                         })
